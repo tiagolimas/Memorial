@@ -1,0 +1,20 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>MemorialDescritivo2</Name>
+  <AddInID>{cf643c00-2be4-45f4-a28b-bed55c196475}</AddInID>
+  <Description>Type in a description for this Add-in.</Description>
+  <Version>1.0</Version>
+  <Image>Images\MemorialDescritivo2.png</Image>
+  <Author>WiLL</Author>
+  <Company>Microsoft</Company>
+  <Date>18/12/2013</Date>
+  <Targets>
+    <Target name="Desktop" version="10.1" />
+  </Targets>
+  <AddIn language="CLR4.0" library="MemorialDescritivo2.dll" namespace="MemorialDescritivo2">
+    <ArcMap>
+      <Commands>
+        <Button id="Microsoft_MemorialDescritivo2_Memorial" class="Memorial" message="Gera Memorial Descritivo" caption="Gerar Memorial Descritivo" tip="Gera Memorial Descritivo" category="Add-In Controls" image="Images\Memorial.png" />
+      </Commands>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>

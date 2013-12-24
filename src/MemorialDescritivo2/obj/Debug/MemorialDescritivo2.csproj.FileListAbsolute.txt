@@ -1,0 +1,8 @@
+C:\SIGMA\ESTUDOS\Exemplos\MemorialDescritivo2\MemorialDescritivo2\bin\Debug\MemorialDescritivo2.dll
+C:\SIGMA\ESTUDOS\Exemplos\MemorialDescritivo2\MemorialDescritivo2\bin\Debug\MemorialDescritivo2.pdb
+C:\SIGMA\ESTUDOS\Exemplos\MemorialDescritivo2\MemorialDescritivo2\obj\Debug\MemorialDescritivo2.csprojResolveAssemblyReference.cache
+C:\SIGMA\ESTUDOS\Exemplos\MemorialDescritivo2\MemorialDescritivo2\obj\Debug\MemorialDescritivo2.dll
+C:\SIGMA\ESTUDOS\Exemplos\MemorialDescritivo2\MemorialDescritivo2\obj\Debug\MemorialDescritivo2.pdb
+C:\SIGMA\ESTUDOS\Exemplos\MemorialDescritivo2\MemorialDescritivo2\obj\Debug\MemorialDescritivo2.frmMemorial.resources
+C:\SIGMA\ESTUDOS\Exemplos\MemorialDescritivo2\MemorialDescritivo2\obj\Debug\MemorialDescritivo2.csproj.GenerateResource.Cache
+C:\SIGMA\ESTUDOS\Exemplos\MemorialDescritivo2\MemorialDescritivo2\bin\Debug\MemorialDescritivo2.esriAddIn
