@@ -5,4 +5,6 @@ C:\SIGMA\ESTUDOS\Exemplos\MemorialDescritivo2\MemorialDescritivo2\obj\Debug\Memo
 C:\SIGMA\ESTUDOS\Exemplos\MemorialDescritivo2\MemorialDescritivo2\obj\Debug\MemorialDescritivo2.pdb
 C:\SIGMA\ESTUDOS\Exemplos\MemorialDescritivo2\MemorialDescritivo2\obj\Debug\MemorialDescritivo2.frmMemorial.resources
 C:\SIGMA\ESTUDOS\Exemplos\MemorialDescritivo2\MemorialDescritivo2\obj\Debug\MemorialDescritivo2.csproj.GenerateResource.Cache
+C:\SIGMA\ESTUDOS\Exemplos\MemorialDescritivo2\MemorialDescritivo2\bin\Debug\nunit.framework.dll
+C:\SIGMA\ESTUDOS\Exemplos\MemorialDescritivo2\MemorialDescritivo2\bin\Debug\nunit.framework.xml
 C:\SIGMA\ESTUDOS\Exemplos\MemorialDescritivo2\MemorialDescritivo2\bin\Debug\MemorialDescritivo2.esriAddIn

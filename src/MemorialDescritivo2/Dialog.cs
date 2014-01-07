@@ -26,7 +26,7 @@ namespace MemorialDescritivo2
             if (gx.DoModalOpen(n, out featureClasses) && featureClasses != null)
             {
                 IGxObject gxObj = featureClasses.Next();
-
+                
                 if (gxObj is IGxDataset)
                 {
                     var gxDataset = (IGxDataset)gxObj;

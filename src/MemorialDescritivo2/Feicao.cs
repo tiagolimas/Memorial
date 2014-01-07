@@ -20,13 +20,6 @@ namespace MemorialDescritivo2
 {
     public static class Feicao
     {
-        
-
-        /// <summary>
-        /// Faz validações sobre a feição
-        /// </summary>
-        /// <param name="feature"></param>
-        /// <returns></returns>
         public static bool Valida(IFeatureClass feature)
         {
             if (feature == null)
@@ -48,11 +41,6 @@ namespace MemorialDescritivo2
             return true;
         }
 
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="klass"></param>
         public static string calculaGeral(IFeatureClass klass)
         {
             IQueryFilter filter = new QueryFilterClass();
@@ -62,6 +50,7 @@ namespace MemorialDescritivo2
             var cursor = klass.Search(filter, false);
             IPolyline poly = new PolylineClass();
             IFeature feature = null;
+            
 
             while ((feature = cursor.NextFeature()) != null)
             {
@@ -74,14 +63,44 @@ namespace MemorialDescritivo2
                     var pontoB = col.get_Point(i + 1);
                     ((IPointCollection)poly).AddPoint(ponto, ref missing, ref missing);
                     ((IPointCollection)poly).AddPoint(pontoB, ref missing, ref missing);
-
                     //resultado += Teste.PegaAzimute(ponto, pontoB, esriSRGeoCSType.esriSRGeoCS_NAD1983);
-                    resultado += Teste.CalculaManual(ponto, pontoB);
+                    resultado += CalculaManual(ponto, pontoB);
                 }
-               
             }
-
             return resultado;
         }
+
+        public static string CalculaManual(IPoint dePonto, IPoint paraPonto)
+        {
+            double distancia, azimute, x, y;
+
+            //TESTE PARA DISTANCIA e AZIMUTE OK
+            //dePonto.X = 801400;
+            //dePonto.Y = 9836400;
+            //paraPonto.X = 805300;
+            //paraPonto.Y = 9839000;
+
+            x = paraPonto.X - dePonto.X;
+            y = paraPonto.Y - dePonto.Y;
+
+            distancia = Math.Sqrt(Math.Pow(x, 2) + Math.Pow(y, 2));
+            //azimute = Math.Atan(x / y);
+            azimute = CalcularAzimute(dePonto, paraPonto);
+            string Mem = string.Format("Azimute: {0} Distancia: {1} \r\n", azimute, distancia);
+            return Mem;
+        }
+
+        public static double CalcularAzimute(IPoint de, IPoint para)
+        {
+            IVector3D vector = new Vector3DClass();
+            vector.ConstructDifference(para, de);
+            return CalculaGraus(vector.Azimuth); 
+        }
+
+        public static double CalculaGraus(double rad)
+        {
+            return rad * (180 / Math.PI);
+        }
+
     }
 }
